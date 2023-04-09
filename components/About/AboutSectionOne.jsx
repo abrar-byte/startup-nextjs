@@ -18,14 +18,15 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className="pt-16 md:pt-20 lg:pt-28" >
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+            <SectionTitle
+                title="Langkah Pemesanan Website"
+                paragraph="Hubungi kami dan konsultasikan website anda. Kami terbuka untuk berdiskusi dalam menentukan website impian yang ingin dibangun bagi bisnis Anda. Kami akan membantu Anda untuk menentukan paket yang tepat."
+                desc="Kirimkan konten untuk yang dibutuhkan untuk bisnis anda, seperti:"
                 mb="44px"
               />
 
@@ -35,15 +36,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Nama bisnis & deskripsi singkat" />
+                    <List text="Keunggulan usaha & Servis" />
+                    <List text="Alamat & Gmaps" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Medsos (email,wa,dsb)" />
+                    <List text="Logo dan gambar2 produk" />
+                    <List text="Testimoni" />
                   </div>
                 </div>
               </div>

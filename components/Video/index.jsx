@@ -6,16 +6,17 @@ import SectionTitle from "../Common/SectionTitle";
 
 import ModalVideo from "react-modal-video";
 
-const Video = () => {
+const Video = ({sectionRef}) => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section ref={sectionRef} className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Kami ada untuk membantu Anda"
+          paragraph="Kami hadir untuk membantu Anda memajukan bisnis dengan cara mendigitalisasikannya. Layanan kami difokuskan pada pembuatan landing page, halaman web yang dirancang secara khusus untuk meningkatkan potensi bisnis Anda. Selain itu, kami juga menyediakan jasa pembuatan website sederhana, seperti toko online, web donasi, blog, website berita, kursus online, dan sebagainya. Tim kami terdiri dari para profesional terampil dan berpengalaman di bidang pembuatan website, yang siap membantu Anda mewujudkan website yang Anda butuhkan. Kami berusaha memberikan pengalaman terbaik bagi Anda, dengan fokus pada kualitas, kecepatan, dan keamanan website. Jadi, jika Anda ingin memaksimalkan bisnis Anda dalam era digital ini, kami siap membantu Anda."
           center
+          width="600px"
           mb="80px"
         />
 
@@ -26,8 +27,8 @@ const Video = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
-                <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
+                <Image src="/images/video/about.svg" alt="about" fill />
+                {/* <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
                   <button
                     onClick={() => setOpen(true)}
                     className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
@@ -41,7 +42,7 @@ const Video = () => {
                       <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
                     </svg>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -5,31 +5,31 @@ const brandsData = [
     id: 1,
     name: "UIdeck",
     href: "https://uideck.com",
-    image: "/images/brands/uideck.svg",
+    image: "/images/brands/wordpress.png",
   },
   {
     id: 2,
     name: "Tailgrids",
     href: "https://tailgrids.com",
-    image: "/images/brands/tailgrids.svg",
+    image: "/images/brands/html.png",
   },
   {
     id: 3,
     name: "Lineicons",
     href: "https://lineicons.com",
-    image: "/images/brands/lineicons.svg",
+    image: "/images/brands/css.png",
   },
   {
     id: 4,
     name: "GrayGrids",
     href: "https://graygrids.com",
-    image: "/images/brands/graygrids.svg",
+    image: "/images/brands/js.png",
   },
   {
     id: 5,
     name: "TailAdmin",
     href: "https://tailadmin.com",
-    image: "/images/brands/tailadmin.svg",
+    image: "/images/brands/react.png",
   },
 ];
 
@@ -63,10 +63,10 @@ const SingleBrand = ({ brand }) => {
   return (
     <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
       <a
-        href={href}
-        target="_blank"
+        // href={href}
+        // target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className="relative min-h-[100px] w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
       >
         <Image src={image} alt={name} fill />
       </a>

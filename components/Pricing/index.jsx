@@ -11,13 +11,13 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Saatnya gunakan jasa kami"
+          paragraph="Gunakan jasa kami untuk mendigitalisasikan bisnis anda"
           center
           width="665px"
         />
 
-        <div className="w-full">
+        {/* <div className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
@@ -58,47 +58,61 @@ const Pricing = () => {
               Yearly
             </span>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            price={300000}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Pembuatan website landing page dengan html,css,js."
+            pack="lite"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Desain & animasi menarik" status="active" />
+            <OfferList text="Free revisi text dan gambar selamanya" status="active" />
+            <OfferList text="Optimasi SEO basic" status="active" />
+            <OfferList text="Layanan Konsultasi" status="active" />
+            <OfferList text="Bisa edit konten sendiri" status="inactive" />
+            <OfferList text="Fitur Blog" status="inactive" />
+            <OfferList text="Gratis domain .site (domain lain disesuaikan dengan harga)" status="active" />
+            <OfferList text="Gratis hosting" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            price={500000}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Pembuatan Website Landing Page dengan Wordpress, konten bisa diedit sendiri dengan mudah"
+            pack="basic"
+
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Desain & animasi menarik" status="active" />
+            <OfferList text="Free revisi text dan gambar selamanya" status="active" />
+            <OfferList text="Optimasi SEO basic" status="active" />
+            <OfferList text="Layanan Konsultasi" status="active" />
+            <OfferList text="Bisa edit konten sendiri" status="active" />
+            <OfferList text="Fitur blog" status="active" />
+            <OfferList text="Gratis domain .site (domain lain disesuaikan dengan harga)" status="active" />
+            <OfferList text="Gratis hosting 1gb" status="active" />
+
+
           </PricingBox>
           <PricingBox
             packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            price={1000000}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Pembuatan Website toko online sederhana dengan Wordpress"
+            pack="plus toko online"
+
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Desain & animasi menarik" status="active" />
+            <OfferList text="Free revisi text dan gambar selamanya" status="active" />
+            <OfferList text="Optimasi SEO basic" status="active" />
+            <OfferList text="Layanan Konsultasi" status="active" />
+            <OfferList text="Bisa edit konten sendiri" status="active" />
+            <OfferList text="Fitur blog" status="active" />
+            <OfferList text="Fitur toko online pada umumnya (keranjang,toko,lacak pesanan,dsb)" status="active" />
+            <OfferList text="Gratis domain .site (domain lain disesuaikan dengan harga)" status="active" />
+            <OfferList text="Gratis hosting 1gb" status="active" />
           </PricingBox>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = ({handleScroll}) => {
+  
   return (
     <>
       <section
@@ -15,24 +16,33 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Free and Open-Source Next.js Template for Startup & SaaS
+                Jasa Pembuatan Website UMKM
                 </h1>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                Startup is free Next.js template for startups and SaaS business websites comes with all the essential pages, components, and sections you need to launch a complete business website, built-with Next 13.x and Tailwind CSS.
+                Perluas jangkauan bisnis Anda di era digital dengan website kustom UMKM yang dibangun khusus untuk memenuhi kebutuhan bisnis Anda, sehingga Anda dapat berkembang lebih cepat dan bersaing dengan bisnis lain di pasar online.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/startup"
-                    className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                      href="https://wa.me/6285156651059?text=Halo+saya+ingin+memesan+website"
+                      legacyBehavior
+                   
                   >
-                    Download Now
+                    <a
+                    target="_blank"
+                    className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    >
+                    Pesan Sekarang
+
+                    </a>
                   </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                  <button
+                  onClick={handleScroll}
+                    // href="#about"
+                    // scroll={false}
                     className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
                   >
-                    Star on GitHub
-                  </Link>
+                    Lebih Lengkap
+                  </button>
                 </div>
               </div>
             </div>

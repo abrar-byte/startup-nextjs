@@ -1,5 +1,7 @@
+import { numberWithDot } from "../Common/Utils";
+
 const PricingBox = (props) => {
-  const { price, duration, packageName, subtitle, children } = props;
+  const { price, duration, packageName, subtitle, children,pack } = props;
 
   return (
     <div className="w-full">
@@ -9,8 +11,8 @@ const PricingBox = (props) => {
       >
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-3xl font-bold text-black dark:text-white">
-            $<span className="amount">{price}</span>
-            <span className="time text-body-color">/{duration}</span>
+            Rp. <span className="amount">{numberWithDot(price)}</span>
+            {/* <span className="time text-body-color">/{duration}</span> */}
           </h3>
           <h4 className="mb-2 text-xl font-bold text-dark dark:text-white">
             {packageName}
@@ -18,8 +20,8 @@ const PricingBox = (props) => {
         </div>
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
-          <button className="flex w-full items-center justify-center rounded-md bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            Start Free Trial
+          <button onClick={()=>window.open(`https://api.whatsapp.com/send/?phone=6285156651059&text=Halo+kak%2C+saya+ingin+memesan+paket+website+${pack}`)} className="flex w-full items-center justify-center rounded-md bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+            Pesan Paket ini
           </button>
         </div>
         <div>{children}</div>
